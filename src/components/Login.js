@@ -31,7 +31,7 @@ function Login() {
     // login 버튼 클릭 이벤트
     const onClickLogin = () => {
         console.log('click login')
-        axios.get("/api/healthcheck")
+        axios.get("/api/health/check")
             .then(res => console.log(res));
     }
 
